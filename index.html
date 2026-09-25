@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PickDish Support</title>
+<style>
+  :root {
+    --bg: #F4F5F7; --surface: #FFFFFF; --ink: #1E222E; --ink-soft: #646C82;
+    --accent: #D44225; --line: rgba(0, 0, 0, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171D; --surface: #1E2129; --ink: #EDEEF2; --ink-soft: #A3A9B8;
+      --accent: #F0674A; --line: rgba(255, 255, 255, 0.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  .tagline { color: var(--ink-soft); margin: 0 0 28px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 16px 20px; margin-bottom: 16px;
+  }
+  h2 { font-size: 18px; margin: 0 0 6px; }
+  p { margin: 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>PickDish</h1>
+  <p class="tagline">Don't know what to eat? PickDish picks a Filipino dish for you, or finds one from what's in your kitchen, then walks you through cooking it.</p>
+
+  <div class="card">
+    <h2>Need help?</h2>
+    <p>Found a bug, a recipe mistake, or have an idea? Email <a href="mailto:jayvincarlismael@gmail.com">jayvincarlismael@gmail.com</a> and include your iPhone model and iOS version if something isn't working.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>PickDish has no accounts and keeps your saved dishes and food preferences on your phone. Read the full <a href="privacy-policy.html">privacy policy</a>.</p>
+  </div>
+</main>
+</body>
+</html>
