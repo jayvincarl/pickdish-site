@@ -30,6 +30,16 @@
   h2 { font-size: 18px; margin: 0 0 6px; }
   p { margin: 0; }
   a { color: var(--accent); }
+  .section { font-size: 20px; margin: 32px 0 12px; }
+  details {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 14px 20px; margin-bottom: 10px;
+  }
+  summary { font-weight: 600; cursor: pointer; }
+  details p, details ul { margin: 8px 0 0; color: var(--ink); }
+  details ul { padding-left: 20px; }
+  details li { margin: 4px 0; }
+  .muted { color: var(--ink-soft); font-size: 14px; margin-top: 28px; }
 </style>
 </head>
 <body>
@@ -42,10 +52,57 @@
     <p>Found a bug, a recipe mistake, or have an idea? Email <a href="mailto:jayvincarlismael@gmail.com">jayvincarlismael@gmail.com</a> and include your iPhone model and iOS version if something isn't working.</p>
   </div>
 
-  <div class="card">
+  <h2 class="section">Frequently asked questions</h2>
+
+  <details>
+    <summary>How does &ldquo;Pick something for me&rdquo; work?</summary>
+    <p>Tap it on Home and PickDish suggests one dish that suits the time of day and skips anything you chose to avoid. Not feeling it? Swipe or tap &ldquo;Skip&rdquo; for another, or tap the dish to start cooking.</p>
+  </details>
+
+  <details>
+    <summary>How does &ldquo;Use what I have&rdquo; work?</summary>
+    <p>Tap the ingredients you have, or search for them in English or Tagalog (for example &ldquo;sibuyas&rdquo; or &ldquo;talong&rdquo;), then tap &ldquo;Show matching dishes&rdquo;. &ldquo;Ready to cook&rdquo; dishes use only what you picked, assuming you have water, salt and cooking oil. &ldquo;Need a few extras&rdquo; lists what&rsquo;s missing. On a dish, anything you don&rsquo;t have is marked &ldquo;Need&rdquo;.</p>
+  </details>
+
+  <details>
+    <summary>My cooking timer didn&rsquo;t alert me</summary>
+    <ul>
+      <li>Make sure notifications are on: <strong>Settings &rsaquo; Notifications &rsaquo; PickDish</strong>. PickDish asks the first time you start a timer.</li>
+      <li>A Focus mode (like Do Not Disturb or Sleep) can hold notifications back. Allow PickDish in that Focus, or check the Lock Screen.</li>
+      <li>With PickDish open, the alarm rings even when your iPhone is on silent. When PickDish is in the background, the alert follows your ringer volume and silent switch.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>I don&rsquo;t see my timer on the Lock Screen or Dynamic Island</summary>
+    <p>Turn on <strong>Settings &rsaquo; PickDish &rsaquo; Live Activities</strong>. The countdown appears once a step timer is running and you leave the app. The Dynamic Island shows it on iPhones that have one, and the Lock Screen on all supported iPhones.</p>
+  </details>
+
+  <details>
+    <summary>How do I change what I avoid, or set vegetarian or vegan?</summary>
+    <p>Tap the gear on Home to open <strong>Preferences</strong>. Choose how you eat (No preference, Vegetarian or Vegan) and what you avoid (Peanuts, Shellfish, Dairy, Gluten, Pork or Seafood). Suggestions update right away.</p>
+  </details>
+
+  <details>
+    <summary>Is PickDish safe to use for food allergies?</summary>
+    <p>PickDish&rsquo;s filters are a helpful guide, not a medical check. They match dishes by their listed ingredients and can miss hidden or cross-contact allergens. If you have an allergy, always check recipe ingredients and product labels yourself.</p>
+  </details>
+
+  <details>
+    <summary>How do I reset or delete my data?</summary>
+    <p>Your ingredients, saved dishes and preferences are stored only on your iPhone. Change preferences anytime in Preferences, remove a saved dish by tapping its heart, or delete the app to erase everything PickDish stored.</p>
+  </details>
+
+  <details>
+    <summary>I found a mistake in a recipe</summary>
+    <p>Thank you! Email us using the address above with the dish name and what looks wrong, and we&rsquo;ll fix it in an update.</p>
+  </details>
+
+  <div class="card" style="margin-top: 32px;">
     <h2>Privacy</h2>
     <p>PickDish has no accounts and keeps your saved dishes and food preferences on your phone. Read the full <a href="privacy-policy.html">privacy policy</a>.</p>
   </div>
+  <p class="muted">PickDish requires iOS 18 or later.</p>
 </main>
 </body>
 </html>
